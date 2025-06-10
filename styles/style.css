@@ -349,3 +349,330 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
 }
+@media (min-width: 1024px) {
+    .menu {
+        height: 75px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: #dcdee0 0px 20px 30px -10px;
+        background-color: #fff;
+        margin-bottom: 100px;
+    }
+
+    .left {
+        width: 790px;
+        display: flex;
+        align-items: center;
+        gap: 4%;
+        padding-right: 0%;
+        font-size: 16px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .left a {
+        text-decoration: none;
+        color: #646464;
+        display: flex;
+        transition: 0.5s ease-in-out;
+    }
+
+    .left a:hover {
+        color: #075fe2;
+    }
+
+    img {
+        justify-content: start;
+        margin-left: 20px;
+        height: 50px;
+    }
+
+    .rigth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .pesquisa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        outline: 0;
+        background-color: #f5f5f5;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 15px;
+        color: #000000;
+        margin-right: 15px;
+    }
+
+    .pesquisa input {
+        border: 0;
+        outline: 0;
+        font-size: 16.7px;
+        color: #1b1727;
+        margin-left: 8px;
+        background-color: #f5f5f5;
+    }
+
+    .pesquisa span {
+        margin-right: 10px;
+    }
+
+    .icons {
+        gap: 17.5%;
+        display: flex;
+        margin-right: 200px;
+        cursor: pointer;
+    }
+
+    .fav-icon {}
+
+    .caixa-principal {
+        height: 600px;
+        color: #c4c4c4;
+        width: 1400px;
+        display: flex;
+        margin: auto;
+        border-radius: 15px;
+        background-image: url(../src/img/xchuteira.png);
+        background-size: 65%;
+        transition: 1s ease-in-out;
+        background-repeat: no-repeat;
+    }
+
+    .caixa-rigth {
+        background-color: #ffffff;
+        height: 600px;
+        width: 600px;
+        display: flex;
+        margin-left: 900px;
+        border-top-right-radius: 15px;
+        border-end-end-radius: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-left: 3%;
+        color: #2b2b2b;
+        font-size: 30px;
+        display: flex;
+        transition: text 2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .caixa-rigth h2:hover {
+        color: #075fe2;
+    }
+
+    .caixa-principal:hover {
+        background-size: 70%;
+        color: #075fe2;
+    }
+
+    .noticias {
+        height: 300px;
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 12.5%;
+        gap: 6.5%;
+        margin-top: 30px;
+        flex-direction: row;
+    }
+
+    .noticias img {
+        height: 190px;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .noticias img:hover {
+        height: 200px;
+    }
+
+    .placar img {
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px -10px;
+    }
+
+    .placar {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-left: 150px;
+    }
+
+    .placar a {
+        display: flex;
+        margin-left: 75px;
+        text-decoration: 0;
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .placar a:hover {
+        color: #075fe2;
+    }
+
+    .coletiva img {
+        box-shadow: rgba(0, 0, 0, 0.445) 0px 20px 30px -10px;
+    }
+
+    .coletiva {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .coletiva a {
+        display: flex;
+        margin-left: 120px;
+        text-decoration: 0;
+        color: #fff9f9;
+        transition: 0.5s ease-in-out;
+    }
+
+    .coletiva a:hover {
+        color: #075fe2;
+    }
+
+    .recordes img {
+        box-shadow: rgba(0, 0, 0, 0.432) 0px 20px 30px -10px;
+    }
+
+    .recordes {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .recordes a {
+        display: flex;
+        margin-left: 115px;
+        text-decoration: 0;
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+    }
+
+    .recordes a:hover {
+        color: #075fe2;
+    }
+
+    .comunicado img {
+        box-shadow: rgba(0, 0, 0, 0.432) 0px 20px 30px -10px;
+    }
+
+    .comunicado {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .comunicado a {
+        display: flex;
+        margin-left: 130px;
+        text-decoration: 0;
+        color: #ffffff;
+        transition: 0.5s ease-in-out;
+    }
+
+    .comunicado a:hover {
+        color: #075fe2;
+    }
+
+    .anuncio-app {
+        background-color: #e7e7e7;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .anuncio-app img {
+        height: 80%;
+        margin-top: 2%;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 100vh;
+        margin-top: -200px;
+    }
+
+    .white-box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 22px 2px #000000;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item {
+        border-color: #c4c4c4;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .produto {
+        text-align: center;
+        background-color: #b5abab;
+        height: 220px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .item img {
+        margin-top: 10px;
+        height: 90%;
+    }
+
+    .sell {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #ff0000;
+        color: white;
+        padding: 7px;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .item h3 {
+        margin: 0;
+        color: #444;
+        font-style: 1.3rem;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .item span {
+        color: #777;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .item button {
+        background-color: #262524;
+        color: #fff;
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
