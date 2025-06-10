@@ -677,23 +677,37 @@ h2 {
     }
 }
 @media (max-width: 768px) {
+  /* MENU */
   .menu {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 15px;
   }
 
   .left {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: auto;
+    flex-direction: row;
     gap: 10px;
-    font-size: 14px;
   }
 
   .left a {
-    font-size: 14px;
+    display: none; /* Esconde os links da esquerda */
+  }
+
+  .pesquisa input {
+    display: none; /* Esconde o input */
+  }
+
+  .pesquisa {
+    background-color: transparent;
+    height: auto;
+    margin: 0;
+  }
+
+  .rigth {
+    margin-right: 0;
+    gap: 10px;
   }
 
   img {
@@ -701,70 +715,33 @@ h2 {
     height: 40px;
   }
 
-  .rigth {
-    margin-right: 0;
-    flex-direction: column;
-  }
-
-  .pesquisa {
-    width: 90%;
-    height: 40px;
-    margin: 10px auto;
-  }
-
-  .pesquisa input {
-    font-size: 14px;
-    width: 100%;
-  }
-
   .icons {
-    margin: 10px 0;
-    gap: 20px;
+    margin: 0;
+    gap: 15px;
     justify-content: center;
   }
 
+  /* CAIXA PRINCIPAL */
   .caixa-principal {
-    flex-direction: column;
-    width: 95%;
-    height: auto;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px 0;
+    display: none; /* Remove a caixa principal e seus conteúdos */
   }
 
-  .caixa-rigth {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-    border-radius: 15px;
-    padding: 20px;
-  }
-
-  h2 {
-    font-size: 22px;
-    text-align: center;
-    margin: 20px auto;
-  }
-
+  /* NOTÍCIAS (placar, coletiva, recordes, comunicado) */
   .noticias {
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    gap: 30px;
-    margin: 30px auto;
-  }
-
-  .noticias img {
-    height: 180px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
   }
 
   .placar,
   .coletiva,
   .recordes,
   .comunicado {
+    width: 45%;
     align-items: center;
-    margin-left: 0;
+    text-align: center;
   }
 
   .placar a,
@@ -772,9 +749,16 @@ h2 {
   .recordes a,
   .comunicado a {
     margin-left: 0;
-    font-size: 16px;
+    font-size: 15px;
   }
 
+  .noticias img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* ANÚNCIO */
   .anuncio-app {
     flex-direction: column;
     height: auto;
@@ -782,37 +766,52 @@ h2 {
   }
 
   .anuncio-app img {
-    height: auto;
     width: 90%;
+    height: auto;
   }
 
+  /* CONTAINER E ITENS (CARDS) */
   .container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     height: auto;
-    margin-top: 0;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 15px;
   }
 
   .white-box {
-    width: 100%;
+    min-width: 280px;
+    width: 90%;
     padding: 10px;
+    box-sizing: border-box;
   }
 
   .items {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .item {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
     width: 100%;
   }
 
+  .item {
+    min-width: 200px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+  }
+
   .produto {
-    height: 180px;
+    height: 150px;
+  }
+
+  .item img {
+    height: 80%;
   }
 
   .item h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .item span {
@@ -820,6 +819,7 @@ h2 {
   }
 
   .item button {
+    font-size: 0.9rem;
     width: 100%;
   }
-      }
+}
