@@ -107,7 +107,7 @@ img {
     border-radius: 15px;
     background-image: url(../src/img/xchuteira.png);
     background-size: 65%;
-    transition: 1.8s ease-in-out;
+    transition: 1s ease-in-out;
     background-repeat: no-repeat;
 
 
@@ -141,7 +141,7 @@ h2 {
 }
 
 .caixa-principal:hover {
-    background-size: 72%;
+    background-size: 70%;
     color: #075fe2;
 }
 
