@@ -126,16 +126,17 @@ img {
 
 }
 
-h2 {
+.caixa-rigth a {
     margin-left: 3%;
     color: #2b2b2b;
     font-size: 30px;
     display: flex;
-    transition: text 2s ease-in-out;
+    transition: text 1s ease-in-out;
     cursor: pointer;
+    text-decoration: 0;
 }
 
-.caixa-rigth h2:hover {
+.caixa-rigth a:hover {
     color: #075fe2;
 }
 
@@ -351,6 +352,17 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+footer{
+    position: absolute;
+    margin-top: 1000px;
+    background-color: #646464;
+    color: #c4c4c4;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media(max-width:1280px){
     body {
