@@ -244,6 +244,17 @@ img {
 .form-comentario button:hover {
   background-color: #333;
 }
+footer{
+    position: absolute;
+    margin-top: 30px;
+    background-color: #646464;
+    color: #c4c4c4;
+    height: 7dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 768px) {
 
   .menu {
